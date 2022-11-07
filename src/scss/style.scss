@@ -1,0 +1,30 @@
+// @import './fonts.scss';
+
+// Blocks
+@import './header.scss';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Fira Sans', 'Roboto', sans-serif;
+  color: var(--font-dark);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  margin: 0;
+
+  @media (max-width: 420px) {
+    overflow-x: hidden;
+  }
+}
+
+
